@@ -128,7 +128,7 @@
 }
 
 .heroTag {
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   color: #49a3ff;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -140,7 +140,7 @@
 }
 
 .heroText h1 {
-  margin: 0;
+  margin: 0 0 16px;
   font-size: clamp(3rem, 4vw, 4.6rem);
   line-height: 1.02;
   max-width: 720px;
@@ -151,7 +151,7 @@
 }
 
 .heroSubtitle {
-  margin: 24px 0;
+  margin: 0 0 20px;
   max-width: 720px;
   color: rgba(255, 255, 255, 0.78);
   font-size: 1.05rem;
@@ -160,16 +160,18 @@
 
 .heroList {
   list-style: none;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
   display: grid;
-  gap: 14px;
+  gap: 10px;
 }
 
 .heroList li {
   color: white;
   font-weight: 600;
   padding-left: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .heroList li::before {
@@ -177,12 +179,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   background: rgba(13, 110, 253, 0.16);
   color: #0d6efd;
   border-radius: 999px;
-  margin-right: 14px;
+  margin-right: 12px;
+  flex-shrink: 0;
 }
 
 .primaryButton {
@@ -242,7 +245,8 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(4, 10, 18, 0.12), rgba(7, 13, 24, 0.32));
-  z-index: 1;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .playOverlay {
@@ -251,7 +255,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -261,7 +265,7 @@
   display: block;
   object-fit: cover;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .playOverlay span {
