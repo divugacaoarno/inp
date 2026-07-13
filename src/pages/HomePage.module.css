@@ -63,7 +63,7 @@
 
 .hero {
   position: relative;
-  padding: 120px 24px 24px;
+  padding: 160px 24px 24px;
   background-image: url('/heroiimg.jpeg');
   background-size: cover;
   background-position: center;
@@ -703,7 +703,7 @@
   }
 
   .hero {
-    padding-top: 140px;
+    padding-top: 200px;
   }
 
   .heroSupport {
