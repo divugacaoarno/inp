@@ -124,6 +124,25 @@ function HomePage() {
               <li>Instalação rápida e acabamento profissional</li>
               <li>Você só aprova o orçamento se fizer sentido para você</li>
             </ul>
+            
+            <div className={styles.heroExtra}>
+              <h3 className={styles.heroExtraTitle}>Por que escolher Drywall ISC?</h3>
+              <div className={styles.heroExtraGrid}>
+                <div className={styles.heroExtraItem}>
+                  <span className={styles.heroExtraIcon}>⏱️</span>
+                  <p>Obras concluídas até 5x mais rápido que alvenaria tradicional</p>
+                </div>
+                <div className={styles.heroExtraItem}>
+                  <span className={styles.heroExtraIcon}>✨</span>
+                  <p>Acabamento perfeito, sem rachaduras e com pintura impecável</p>
+                </div>
+                <div className={styles.heroExtraItem}>
+                  <span className={styles.heroExtraIcon}>💰</span>
+                  <p>Custo-benefício excelente, com economia em tempo e materiais</p>
+                </div>
+              </div>
+            </div>
+            
             <a href="https://wa.me/5521985250808" target="_blank" rel="noreferrer" className={styles.primaryButton}>QUERO MEU ORÇAMENTO GRÁTIS NO WHATSAPP</a>
             <div className={styles.heroSupport}> 
               <span>⚡ Resposta em até 5 minutos</span>

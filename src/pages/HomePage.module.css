@@ -188,6 +188,42 @@
   flex-shrink: 0;
 }
 
+.heroExtra {
+  margin: 24px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.heroExtraTitle {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.heroExtraGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.heroExtraItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.heroExtraIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
 .primaryButton {
   display: inline-flex;
   align-items: center;
