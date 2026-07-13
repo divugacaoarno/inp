@@ -31,11 +31,6 @@
   background: transparent;
 }
 
-/* play overlay removed: video will show without centered play icon */
-    font-size: 0.85rem;
-  }
-}
-
 .navLinks {
   display: flex;
   align-items: center;
