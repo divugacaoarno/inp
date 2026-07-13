@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 32px;
+  padding: 0px 32px;
   gap: 24px;
 }
 
@@ -96,7 +96,7 @@
 
 .hero {
   position: relative;
-  padding: 160px 24px 24px;
+  padding: 130px 24px 24px;
   background-image: url('/heroiimg.jpeg');
   background-size: cover;
   background-position: center;
@@ -687,7 +687,7 @@
 
 @media (max-width: 950px) {
   .navbar {
-    padding: 4px 16px;
+    padding: 0px 16px;
     gap: 12px;
   }
 
@@ -720,7 +720,7 @@
   }
 
   .navbar {
-    padding: 4px 16px;
+    padding: 0px 16px;
   }
 
   .navbarRight {
@@ -734,11 +734,11 @@
 
 @media (max-width: 760px) {
   .navbar {
-    padding: 4px 14px;
+    padding: 0px 14px;
   }
 
   .hero {
-    padding-top: 180px;
+    padding-top: 160px;
   }
 
   .heroSupport {
