@@ -64,6 +64,11 @@
   background: transparent;
 }
 
+.logoWrapper img {
+  height: 40px;
+  object-fit: contain;
+}
+
 .navLinks {
   display: flex;
   align-items: center;
@@ -84,8 +89,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 14px 34px;
+  gap: 8px;
+  padding: 8px 20px;
   min-width: 240px;
   background: #16c265;
   color: white;
@@ -96,7 +101,7 @@
 
 .hero {
   position: relative;
-  padding: 130px 24px 24px;
+  padding: 100px 24px 24px;
   background-image: url('/heroiimg.jpeg');
   background-size: cover;
   background-position: center;
@@ -738,7 +743,7 @@
   }
 
   .hero {
-    padding-top: 160px;
+    padding-top: 120px;
   }
 
   .heroSupport {
