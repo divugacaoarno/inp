@@ -102,7 +102,7 @@
 
 .hero {
   position: relative;
-  padding: 120px 24px 24px;
+  padding: 80px 24px 24px;
   background-image: url('/heroiimg.jpeg');
   background-size: cover;
   background-position: center;
@@ -125,7 +125,7 @@
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 60px;
-  align-items: center;
+  align-items: start;
 }
 
 .heroTag {
