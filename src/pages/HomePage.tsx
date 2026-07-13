@@ -117,7 +117,7 @@ function HomePage() {
             <h1>
               Drywall com acabamento impecável <span className={styles.heroHighlight}>em poucos dias</span> — sem sujeira e <span className={styles.heroHighlight}>sem dor de cabeça</span>.
             </h1>
-            <p className={styles.heroSubtitle}>Descubra no vídeo ao lado por que cada vez mais clientes estão trocando a alvenaria pelo drywall e economizando tempo na obra.</p>
+
             <ul className={styles.heroList}>
               <li>Orçamento gratuito</li>
               <li>Atendimento imediato pelo WhatsApp</li>
