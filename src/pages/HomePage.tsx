@@ -74,6 +74,11 @@ function HomePage() {
           </nav>
           
           <div className={styles.navbarRight}>
+            <a href="https://wa.me/5521985250808" target="_blank" rel="noreferrer" className={styles.navCta}>
+              <AiOutlineWhatsApp size={18} />
+              <span className={styles.navCtaText}>FALAR NO WHATSAPP</span>
+            </a>
+            
             {/* Mobile Hamburger Button */}
             <button 
               className={styles.mobileMenuBtn}
@@ -82,11 +87,6 @@ function HomePage() {
             >
               {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
             </button>
-
-            <a href="https://wa.me/5521985250808" target="_blank" rel="noreferrer" className={styles.navCta}>
-              <AiOutlineWhatsApp size={18} />
-              <span className={styles.navCtaText}>FALAR NO WHATSAPP</span>
-            </a>
           </div>
         </div>
 
