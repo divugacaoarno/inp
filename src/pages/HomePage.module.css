@@ -161,10 +161,12 @@
 
 .heroList {
   list-style: none;
-  margin: 0 0 20px;
+  margin: 20px 0 0;
   padding: 0;
   display: grid;
   gap: 10px;
+  text-align: center;
+  justify-items: center;
 }
 
 .heroList li {

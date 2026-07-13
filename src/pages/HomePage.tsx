@@ -117,13 +117,6 @@ function HomePage() {
             <h1>
               Drywall com acabamento impecável <span className={styles.heroHighlight}>em poucos dias</span> — sem sujeira e <span className={styles.heroHighlight}>sem dor de cabeça</span>.
             </h1>
-
-            <ul className={styles.heroList}>
-              <li>Orçamento gratuito</li>
-              <li>Atendimento imediato pelo WhatsApp</li>
-              <li>Instalação rápida e acabamento profissional</li>
-              <li>Você só aprova o orçamento se fizer sentido para você</li>
-            </ul>
             
             <div className={styles.heroExtra}>
               <h3 className={styles.heroExtraTitle}>Por que escolher Drywall ISC?</h3>
@@ -163,8 +156,13 @@ function HomePage() {
                 controls
                 preload="metadata"
               />
-              
             </div>
+            <ul className={styles.heroList}>
+              <li>Orçamento gratuito</li>
+              <li>Atendimento imediato pelo WhatsApp</li>
+              <li>Instalação rápida e acabamento profissional</li>
+              <li>Você só aprova o orçamento se fizer sentido para você</li>
+            </ul>
           </motion.div>
         </div>
       </section>
