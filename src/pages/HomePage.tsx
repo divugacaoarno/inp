@@ -1,7 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { FiCheck, FiClock, FiShield, FiTrendingUp, FiUsers } from 'react-icons/fi';
+import { FiCheck, FiClock, FiShield, FiTrendingUp, FiUsers, FiMenu, FiX } from 'react-icons/fi';
 import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -47,6 +48,8 @@ const beforeAfterSlides = [
 ];
 
 function HomePage() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <main className={styles.page}>
       <Helmet>
@@ -59,6 +62,8 @@ function HomePage() {
           <div className={styles.logoWrapper}>
             <img src="/dryisc.logo-Photoroom.png" alt="Logo Drywall ISC" className={styles.logo} />
           </div>
+          
+          {/* Desktop Nav Links */}
           <nav className={styles.navLinks}>
             <a href="#inicio">Início</a>
             <a href="#servicos">Serviços</a>
@@ -67,11 +72,42 @@ function HomePage() {
             <a href="#duvidas">Dúvidas</a>
             <a href="#contato">Contato</a>
           </nav>
-          <a href="https://wa.me/5521985250808" target="_blank" rel="noreferrer" className={styles.navCta}>
-            <AiOutlineWhatsApp size={18} />
-            FALAR NO WHATSAPP
-          </a>
+          
+          <div className={styles.navbarRight}>
+            {/* Mobile Hamburger Button */}
+            <button 
+              className={styles.mobileMenuBtn}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle Menu"
+            >
+              {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+            </button>
+
+            <a href="https://wa.me/5521985250808" target="_blank" rel="noreferrer" className={styles.navCta}>
+              <AiOutlineWhatsApp size={18} />
+              <span className={styles.navCtaText}>FALAR NO WHATSAPP</span>
+            </a>
+          </div>
         </div>
+
+        {/* Mobile Menu Dropdown */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.nav 
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className={styles.mobileNavLinks}
+            >
+              <a href="#inicio" onClick={() => setIsMobileMenuOpen(false)}>Início</a>
+              <a href="#servicos" onClick={() => setIsMobileMenuOpen(false)}>Serviços</a>
+              <a href="#sobre" onClick={() => setIsMobileMenuOpen(false)}>Sobre Nós</a>
+              <a href="#projetos" onClick={() => setIsMobileMenuOpen(false)}>Projetos</a>
+              <a href="#duvidas" onClick={() => setIsMobileMenuOpen(false)}>Dúvidas</a>
+              <a href="#contato" onClick={() => setIsMobileMenuOpen(false)}>Contato</a>
+            </motion.nav>
+          )}
+        </AnimatePresence>
       </header>
 
       <section className={styles.hero} id="inicio">
