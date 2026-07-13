@@ -113,35 +113,19 @@ function HomePage() {
       <section className={styles.hero} id="inicio">
         <div className={styles.heroContent}>
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className={styles.heroText}>
-            <p className={styles.heroTag}>Sua obra está parada ou demorando demais?</p>
+            <p className={styles.heroTag}>Sua obra está atrasada ou demorando mais do que deveria?</p>
             <h1>
-              Drywall com acabamento impecável <span className={styles.heroHighlight}>em poucos dias</span> — sem sujeira e <span className={styles.heroHighlight}>sem dor de cabeça</span>.
+              Drywall profissional com <span className={styles.heroHighlight}>acabamento impecável</span>, <span className={styles.heroHighlight}>instalação rápida</span> e sem dor de cabeça.
             </h1>
-            
-            <div className={styles.heroExtra}>
-              <h3 className={styles.heroExtraTitle}>Por que escolher Drywall ISC?</h3>
-              <div className={styles.heroExtraGrid}>
-                <div className={styles.heroExtraItem}>
-                  <span className={styles.heroExtraIcon}>⏱️</span>
-                  <p>Obras concluídas até 5x mais rápido que alvenaria tradicional</p>
-                </div>
-                <div className={styles.heroExtraItem}>
-                  <span className={styles.heroExtraIcon}>✨</span>
-                  <p>Acabamento perfeito, sem rachaduras e com pintura impecável</p>
-                </div>
-                <div className={styles.heroExtraItem}>
-                  <span className={styles.heroExtraIcon}>💰</span>
-                  <p>Custo-benefício excelente, com economia em tempo e materiais</p>
-                </div>
-              </div>
-            </div>
-            
-            <a href="https://wa.me/5521985250808" target="_blank" rel="noreferrer" className={styles.primaryButton}>QUERO MEU ORÇAMENTO GRÁTIS NO WHATSAPP</a>
-            <div className={styles.heroSupport}> 
-              <span>⚡ Resposta em até 5 minutos</span>
-              <span>🛡️ Sem compromisso</span>
-              <span>📱 Atendimento rápido</span>
-            </div>
+            <p className={styles.heroSubtitle}>
+              Atendemos residências, apartamentos, escritórios e empresas com orçamento gratuito e atendimento imediato pelo WhatsApp.
+            </p>
+            <a href="https://wa.me/5521985250808" target="_blank" rel="noreferrer" className={styles.primaryButton}>
+              <AiOutlineWhatsApp size={20} />
+              RECEBER ORÇAMENTO GRATUITO
+            </a>
+            <div className={styles.heroBadge}>🟢 Resposta em até 5 minutos</div>
+
           </motion.div>
 
           <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9 }} className={styles.heroMedia}>
