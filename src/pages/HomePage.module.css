@@ -231,7 +231,7 @@
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 40px 100px rgba(10, 25, 60, 0.18);
-  min-height: 560px;
+  min-height: 400px;
   width: 100%;
   max-width: 680px;
   background: rgba(12, 18, 34, 0.88);
